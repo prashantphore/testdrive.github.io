@@ -1,0 +1,97 @@
+{% extends "layout.html" %}
+{% block body %}
+        <!-- Page Content-->
+        <section class="py-5">
+            <div class="container">
+                <!-- Page Heading/Breadcrumbs-->
+                <h1>
+                    X series
+                    
+                </h1>
+                <ol class="breadcrumb mb-4">
+                    <li class="breadcrumb-item"><a href="/index">Home</a></li>
+                    <li class="breadcrumb-item active">X series</li>
+                </ol>
+                <div class="row">
+                    <div class="col-lg-6 mb-4">
+                        <div class="card h-100">
+                            <a href="#!"><img class="card-img-top" src="{{url_for('static', filename='img/x1.jpg')}}" height="300px"></a>
+                            <div class="card-body">
+                                <h4>THE BMW X1</h4>
+                                <p class="card-text">Milestones ahead: the new BMW X1 has come to set standards. Its eagerness for action is shown above all in its athletic design. At first glance, it is an X model through and through: its exterior is characterised by short overhangs and a long wheelbase typical of a SAV (Sports Activity Vehicle). It makes its ambitions clear with convincing dynamics and agility. And thanks to high versatility and flexibility in combination with innovative technologies, it ensures maximum comfort on every meter of the ride.</p>
+                                <a class="btn btn-primary" href="/requestdrive">Book a Test Drive</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 mb-4">
+                        <div class="card h-100">
+                            <a href="#!"><img class="card-img-top" src="{{url_for('static', filename='img/x3.jpg')}}"height="300px"></a>
+                            <div class="card-body">
+                                <h4>THE BMW X3</h4>
+                                <p class="card-text">The BMW X3 is a statement of unlimited opportunities and an expression of sheer presence and freedom. From the very first glance, it impresses with its athletic appearance and fascinates with an exciting driving experience. Thanks to the intelligent all-wheel drive system BMW xDrive, it offers supreme ride comfort both on and off the road. It therefore redefines the benchmarks in its class and makes one thing unmistakably clear: there is a great difference in how you reach your destinations.</p>
+                                <a class="btn btn-primary" href="/requestdrive">Book a Test Drive</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 mb-4">
+                        <div class="card h-100">
+                            <a href="#!"><img class="card-img-top" src="{{url_for('static', filename='img/x4.jpg')}}"height="240"></a>
+                            <div class="card-body">
+                                <h4>THE BMW X4</h4>
+                                <p class="card-text">No matter what challenges may lie in your way, the BMW X4 eagerly anticipates them. Its progressive design and the coupé-like contours instantly reveal its thirst for action. And thanks to the first-class driving dynamics, the innovative lightweight construction with a low centre of gravity as well as the even higher performance level – only one thing stands between you and your destinations: sheer driving pleasure.</p>
+                                <a class="btn btn-primary" href="/requestdrive">Book a Test Drive</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 mb-4">
+                        <div class="card h-100">
+                            <a href="#!"><img class="card-img-top" src="{{url_for('static', filename='img/x5.jpg')}}"></a>
+                            <div class="card-body">
+                                <h4>THE BMW X5</h4>
+                                <p class="card-text">The BMW X5 is designed to let you boss every road with unmatched comfort and in extreme ease. Whether you are seeking the uncharted or looking to raise your driving pleasure many notches higher. On the outside, a sculpted exterior with imposing dimensions will make your presence felt in the city, on the highway and beyond. Equipped with new technologies for more safety and maximum driving dynamics on every surface, the BMW X5 knows where it’s going. And how to get there first.</p>
+                                <a class="btn btn-primary" href="/requestdrive">Book a Test Drive</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 mb-4">
+                        <div class="card h-100">
+                            <a href="#!"><img class="card-img-top" src="{{url_for('static', filename='img/x6.jpg')}}"height="300px"></a>
+                            <div class="card-body">
+                                <h4>THE ALL-NEW BMW X6</h4>
+                                <p class="card-text">Uncompromisingly non-conformist – the all-new BMW X6 stands for provocative self-assertiveness. Above all, this is visible in the extremely athletic body of the vehicle along with the new, distinctive design language, which is displayed by the supreme exclusivity and visionary technologies such as the impressive BMW kidney grille ‘Iconic Glow’. All of this primarily points to one thing: absolute dominance, which the all-new BMW X6 demonstrates quite matter-of-factly on every route thanks to a powerful engine and precise suspension.</p>
+                                <a class="btn btn-primary" href="/requestdrive">Book a Test Drive</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 mb-4">
+                        <div class="card h-100">
+                            <a href="#!"><img class="card-img-top" src="{{url_for('static', filename='img/x7.jpg')}}"height="300px"></a>
+                            <div class="card-body">
+                                <h4>THE FIRST-EVER BMW X7</h4>
+                                <p class="card-text">A statement of the luxury class: the first-ever BMW X7 is the elegant fusion of presence and personality. Despite its majestic appearance, it gives an impression of lightness and agility thanks to the puristic design and athletic styling. At the same time, the considerable spaciousness of the interior offers a pioneering interplay of exclusivity, functionality and freedom – incomparable comfort all the way to the third row of seats. Charm is its essence. Elegance its character.</p>
+                                <a class="btn btn-primary" href="/requestdrive">Book a Test Drive</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Pagination-->
+<!--                <ul class="pagination justify-content-center">
+                    <li class="page-item">
+                        <a class="page-link" href="#" aria-label="Previous">
+                            <span aria-hidden="true">«</span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                    </li>
+                    <li class="page-item"><a class="page-link" href="#!">1</a></li>
+                    <li class="page-item"><a class="page-link" href="#!">2</a></li>
+                    <li class="page-item"><a class="page-link" href="#!">3</a></li>
+                    <li class="page-item">
+                        <a class="page-link" href="#" aria-label="Next">
+                            <span aria-hidden="true">»</span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </li>
+                </ul> -->
+            </div>
+        </section>
+{% endblock %}

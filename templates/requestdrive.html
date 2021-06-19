@@ -1,0 +1,93 @@
+{% extends "layout.html" %}
+{% block body %}
+        <!-- Page Content-->
+        <section class="py-5">
+            <div class="container">
+                <ol class="breadcrumb mb-4">
+                    <li class="breadcrumb-item"><a href="/index">Home</a></li>
+                    <li class="breadcrumb-item active">Test Drive</li> 
+                </ol>
+                <!-- Page Heading/Breadcrumbs-->
+                <h1>
+                    Request your test drive
+                    
+                </h1>
+
+                <div class="row">
+                    <div class="col-lg-5 mb-4">
+                        <small>To book your test drive now, kindly fill in your information below.</small>
+                        <form id="contactForm" name="sentMessage" action="/requestdrive" method="POST" novalidate>
+                            <div class="control-group form-group">
+                                <div class="controls">
+                                    <input class="form-control" id="name" type="text" name="fname" placeholder="FIRST NAME" required data-validation-required-message="Please enter your name." />
+                                    <p class="help-block"></p>
+                                </div>
+                            </div>
+                            <div class="control-group form-group">
+                                <div class="controls">
+                                    <input class="form-control" id="name" type="text" name="lname" placeholder="LAST NAME" required data-validation-required-message="Please enter your name." />
+                                    <p class="help-block"></p>
+                                </div>
+                            </div>
+                            <div class="control-group form-group">
+                                <div class="controls">
+                                    <input class="form-control" id="email" type="email" name="email" placeholder="EMAIL" required data-validation-required-message="Please enter your email address." />
+                                </div>
+                            </div>
+                            <div class="control-group form-group">
+                                <div class="controls">
+                                    <input class="form-control" id="phone" type="tel" name="phone" placeholder="MOBILE" required data-validation-required-message="Please enter your phone number." />
+                                </div>
+                            </div>
+                            <div class="control-group form-group">
+                                <div class="controls">
+                                    <select id="cars" input class="form-control" type="text" name="model" placeholder="PREFERRED MODEL" required data-validation-required-message="Please enter your preferred model" />
+                                    <option data-id value selected>PREFFERED MODEL*</option>
+                                    <option value="BMW 2 SERIES GRAN"> BMW 2 SERIES GRAN </option>
+                                    <option value="THE 3 GRAN LIMOUSINE"> THE 3 GRAN LIMOUSINE </option>
+                                    <option value="THE 6 LUXURY RECRAFTED"> THE 6 LUXURY RECRAFTED </option>
+                                    <option value="THE BMW X1"> THE BMW X1 </option>
+                                    <option value="THE BMW X3"> THE BMW X3 </option>
+                                    <option value="THE BMW X4"> THE BMW X4 </option>
+                                    <option value="THE BMW X5"> THE BMW X5 </option>
+                                    <option value="THE ALL-NEW BMW X6"> THE ALL-NEW BMW X6 </option>
+                                    <option value="THE FIRST-EVER BMW X7"> THE FIRST-EVER BMW X7 </option>
+                                    <option value="THE BMW M2 COMPETITION"> THE BMW M2 COMPETITION </option>
+                                    <option value="THE BMW 760Li"> THE BMW 760Li </option>
+                                    <option value="THE BMW M8 Coupe"> THE BMW M8 Coupe </option>
+                                    <option value="THE BMW X3 M"> THE BMW X3 M </option>
+                                    <option value="BMW X5 COMPETITION"> BMW X5 COMPETITION </option>
+                                    <option value="BMW X7 M50d"> BMW X7 M50d </option></select>
+                                </div>
+                            </div>
+                            <div class="control-group form-group">
+                                <div class="controls">
+                                    <select id="city" input class="form-control" type="text" name="city" placeholder="CITY" required data-validation-required-message="Please enter your city" />
+                                    <option data-id value selected>PREFFERED CITY*</option>
+                                    <option value="Ahmedabad"> AHMEDABAD </option>
+                                    <option value="Bangalore"> BANGLORE </option>
+                                    <option value="Chennai"> CHENNAI </option>
+                                    <option value="Delhi"> DELHI </option>
+                                    <option value="Hyderabad"> HYDERABAD </option>
+                                    <option value="Jaipur"> JAIPUR </option>
+                                    <option value="Kolkata"> KOLKATA </option>
+                                    <option value="Mumbai"> MUMBAI </option>
+                                    <option value="Pune"> PUNE </option>
+                                    <option value="Surat"> SURAT </option></select>
+                                    <div id="success"></div><br>
+                            <!-- For success/fail messages-->
+                            <button class="btn btn-primary" id="sendRequestButton" type="submit">Submit</button><br>
+                            <b>Terms and conditions:</b>
+                            <p>*Terms and conditions apply. The model, equipment and possible vehicle configurations illustrated in this advertisement may differ from the vehicles supplied in the Indian market.</p>
+                                </div>
+                                </div>
+                            </div>
+                            
+                            
+                        </form>
+                        
+                    </div>
+                </div>
+            </div>
+        </section>
+{% endblock %}

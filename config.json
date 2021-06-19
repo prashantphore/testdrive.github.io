@@ -1,0 +1,17 @@
+{
+  "params":
+  {
+    "local_server": "TRUE",
+    "local_uri":"mysql://root:@localhost/firstwebsite",
+    "prod_uri":"mysql://root:@localhost/firstwebsite",
+    "fb_url":"https://facebook.com/bmw",
+    "tw_url":"https://twitter.com/bmw",
+    "company_name": "BMW",
+    "gmail-user": "prashantphore123@gmail.com",
+    "gmail-password": "Prashant@123",
+    "admin-user": "admin",
+    "admin-password": "password"
+  }
+
+
+}

@@ -1,0 +1,44 @@
+{% extends "layout.html" %}
+{% block body %}
+
+        <!-- Page Content-->
+        <section class="py-5">
+            <div class="container">
+                <!-- Page Heading/Breadcrumbs-->
+                <ol class="breadcrumb mb-4">
+                    <li class="breadcrumb-item"><a href="/index">Home</a></li>
+                    <li class="breadcrumb-item active">Services</li>
+                </ol>
+                   <h1> WELCOME TO THE SERVICE PAGE FOR BMW PRODUCTS</h1>
+                    <h5>SERVICE BEGINS IN THE VEHICLE</h4><br>
+                
+                <!-- Image Header-->
+
+                <img src="{{url_for('static', filename='img/services2.jpg')}}" />
+                <!-- Marketing Icons Section-->
+                <div class="row">
+                    <div class="col-lg-4 mb-4 mb-lg-0">
+                        <div class="card h-100">
+                            <h4 class="card-header">THE INNOCATION SERVICE CONCEPT.</h4>
+                            <div class="card-body"><p class="card-text">Intelligent service starts in your BMW from where you can call up your service status at any time. Data on wear-and-tear parts and fluid levels is constantly monitored and stored in your car key and can be accessed by your BMW Service Centre during your next service appointment.</p></div>
+                            <div class="card-footer"><a class="btn btn-primary" href="#!">Learn More</a></div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 mb-4 mb-lg-0">
+                        <div class="card h-100">
+                            <h4 class="card-header">CONCENTRATE ON WHAT IS IMPORTANT: DRIVING</h4>
+                            <div class="card-body"><p class="card-text">The intelligent maintenance system CBS permanently monitors oil levels and the degree of wear and tear on indivdual components. It also checks the time/mileage recommendations for fixed services.</p></div>
+                            <div class="card-footer"><a class="btn btn-primary" href="#!">Learn More</a></div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="card h-100">
+                            <h4 class="card-header">FAST DATA EVALUATION</h4>
+                            <div class="card-body"><p class="card-text">Reading the service-relevant vehicle data saved on its key, the KeyReader enables your BMW Service CEntre to immediately access all relevant information accurately and effortlessly.</p></div>
+                            <div class="card-footer"><a class="btn btn-primary" href="#!">Learn More</a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+{% endblock %}
